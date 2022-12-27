@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Encriptar|Desencriptar</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="">
+    </header>
+    <div class="main-cont">
+        <div class="main">
+            <div class="encrypt">
+                <textarea  id="usertxt" class="input" placeholder="Ingrese el texto aquí" type="text"></textarea>
+                <p class="advice">
+                    <img  src="./img/icon.png" alt="advice" >
+                    Solo letras minúsculas y sin acentos</p>
+                <div class="buttons">
+                    <button id="btnEncrypt" class=" btn btn1">
+                        Encriptar
+                    </button>
+                    <button id="btnDecrypt" class=" btn btn2">
+                        Desencriptar
+                    </button>
+                </div>
+            </div>
+            <div class="result">
+                <img id="illus" src="./img/illustracion.png" alt="">
+
+                <div class="msgs">
+                    <div class="msg">
+                        <p class="msg1" id="msg1">Ningún mensaje fue encontrado</p>
+                        <p id="msg2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <div class="result-cont" >
+                        <textarea readonly id="result" class="msg2"></textarea>
+                    </div>
+                </div>
+                <button id="btnCopy" class=" btn btn2 btnCopy">Copiar</button>
+            </div>
+        </div>
+
+    </div>
+    <footer class="pie-pagina">
+        <p>© 2022 Todos los derechos reservados por Segovia Facundo Ivan | Oracle+AluraLatam. </p>
+        <a href="https://www.linkedin.com/in/facundoivansegovia/" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" class="pgn" alt="icono Linkedin"></a>
+        <a href="https://github.com/Facuiz" target="_blank" rel="noopener noreferrer"><img src="./img/git.png" class="pgn" alt="icono GitHub"></a>
+        <a href="https://www.instagram.com/aluralatam" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png" class="pgn" alt="icono Instagram"></a>
+
+      </footer>
+
+<script src="js/encriptador.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+#result {
+    display: none;
+}
+
+#btnCopy {
+    margin-top: -20px;
+}
+.result { 
+    height: 95%;
+}
+.result img {
+    display: none;
+    width: 80%;
+    margin: 20px 0;
+    margin-left: 30px;
+}
+
+.btnCopy {
+    margin-top: 10px;
+    display: none;
+}
+header {
+    padding: 0 20px;
+}
+header img {
+    width: 80px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: -20px;
+}
+
+.main {
+    padding: 0 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-image: linear-gradient(to right top, #6b6bd1, #6c77d7, #6f83dc, #748fe0, #7b9ae3, #73a7ec, #6db3f3, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.encrypt textarea {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    border-radius: 0;
+    width: 100%;
+    height: 250px;
+    color: #0A3871;
+    resize: none;
+}
+
+.encrypt textarea::placeholder {
+    color: #0A3871;
+}
+
+ textarea:focus,
+ textarea:active {
+    outline: none;
+
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn,
+.btn {
+    width: 100%;
+    padding: 10px;
+    height: 55px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;    
+    
+}
+
+.btn1 {
+    border: 1px solid #0A3871;
+    background-color: #0A3871;
+    color: #FFFFFF;    
+
+}
+.btn1:hover {
+    background-color:#131164;    
+ }
+
+.btn2 {
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    background-color: transparent;;
+}
+ .btn2:hover {
+    background-color: #EFF1FA;
+ }
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin: 50px 0; 
+    word-wrap: break-word;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+.msg1   {
+    font-size: 22px;
+    color: #252525;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.msg2  {
+  
+    font-size: 16px;
+    color: #252525;
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    border-radius: 0;
+    width: 100%;
+    height: 350px;
+    color: #0A3871;
+    resize: none;
+  
+}
+.advice {
+    font-size: 16px;
+    color: #495057;
+    font-weight: 400;
+    margin: 20px 0;
+    margin-left: 10px;
+}
+
+@media  (min-width: 769px) {
+  .buttons {
+    flex-direction: row; 
+  }
+
+  .btnCopy { 
+    margin-bottom: -25px;
+  }
+
+}
+@media  (max-width: 1023px) {
+    
+    .result {
+
+      height:30vh;
+    }
+
+    .result textarea {
+
+ height: 10%;
+ margin-top: -10px;
+    }
+     .main-cont {
+        height: 90vh;
+     }  
+  
+  }
+
+@media  (min-width: 1024px) {
+    .main-cont{
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 100px;
+        max-width: 1500px;
+
+    }
+    .result img { 
+        display: block ;
+    }
+
+    .encrypt {
+        width: 58%;
+        
+    }
+
+    .encrypt textarea {
+        height: 55vh;
+        
+    }
+    .result {
+        align-self: flex-start !important;
+        width: 35%;
+        margin: 0;
+        margin-top: -60px;
+        height: 85vh;
+    }
+  }
+
+  @media  (min-width: 1400px) {  
+
+    .encrypt textarea {
+        height: 55vh;
+        
+    }
+
+    .result {
+        align-self: flex-start !important;
+        width: 35%;
+        margin-right: -115px;
+        margin-top: -60px;
+        height: 80vh;
+    }   
+  }
+
+  
+  footer {
+    height: 90px;
+    background-image: linear-gradient(to right top, #6b6bd1, #6c77d7, #6f83dc, #748fe0, #7b9ae3, #73a7ec, #6db3f3, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    margin-top: 135px;    
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 20px;
+}
+.pgn{
+    width: 30px;
+    margin: 10 55px;
+    padding: 55px 54px;
+    border-radius: 500%; 
+    
+}
+@media screen and (max-width: 400px) {
+    .pie-pagina{
+        font-size: 10px;
+    }
+}
+    .pgn{       
+        margin: 5 20px;
+        padding: 5px 5px;
+        border-radius: 50%;
+    }
